@@ -12,10 +12,11 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace Origin\Console\Exception;
+namespace Origin\Console\Command\Exception;
 
 use Origin\Core\Exception\Exception;
 
-class StopExecutionException extends Exception
+class MissingCommandException extends Exception
 {
+    protected $template = '%s could not be found.';
 }
